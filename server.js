@@ -26,7 +26,7 @@ app.post('/callback', line.middleware(config), (req, res) => {
 function handleEvent(event) {
 
     if(event.message.text == "meme"){
-      const echo = { type: 'text', text: "go f yourself" };
+      const echo = { type: 'text', text: "Yuks" };
       return client.replyMessage(event.replyToken, echo);
     }
 
